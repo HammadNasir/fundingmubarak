@@ -13,15 +13,15 @@ client.stream("statuses/filter", { track: "#fundraise" }, function (stream) {
     // check if tweet contains some media
     // if (tweet.media_url) {
     //   console.log("Replying to tweet with video.");
-    postReplyWithMedia(
-      client,
-      "./Kya-karenge-aap-iss-dhan-rashi-ka-KBC-memes.jpeg",
-      tweet
-    );
+//     postReplyWithMedia(
+//       client,
+//       "./Kya-karenge-aap-iss-dhan-rashi-ka-KBC-memes.jpeg",
+//       tweet
+//     );
     // } else {
     //   console.log("Tweet didn't provide media. Replying with message.");
-    // const message = "Voila!";
-    // postReply(client, message, tweet);
+    const message = "";
+    postReply(client, message, tweet);
     // }
 
     stream.on("error", function (error) {
