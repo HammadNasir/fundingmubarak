@@ -116,7 +116,7 @@ const postReplyWithMedia = (client, mediaFilePath, replyTweet) => {
 
 const postReply = (client, message, replyTweet) => {
   let statusObj = {
-    status: "Hi @" + replyTweet.user.screen_name + ", " + message,
+    status: "Woohoo @" + replyTweet.user.screen_name + ", congratulations on getting funded! 🎉 #FundingMubarak" + message,
     in_reply_to_status_id: replyTweet.id_str,
   };
 
